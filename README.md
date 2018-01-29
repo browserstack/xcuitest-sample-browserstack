@@ -14,7 +14,7 @@ A sample iOS app supporting XCUI Tests.
 4. Build the XC UI Tests zip
 	1. Product -> Build For -> Testing
 	2. From the shell, go to the DerivedData directory (normally ~/Library/Developer/Xcode/DerivedData/)
-	3. cd Sample_iOS-<random characters>
+	3. cd Sample_iOS-&lt;random characters&gt;
 	4. cd Build/Products/Debug-iphoneos/
 	5. zip -r SampleUITests.zip SampleXCUITests-Runner.app/
 5. Use the ipa, and zip file to run on Browserstack
