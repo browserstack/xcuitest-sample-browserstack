@@ -9,10 +9,20 @@
 import UIKit
 import WebKit
 
-class NavWebView: UIViewController {
+class NavWebView: UIViewController, WKUIDelegate {
 
     
     @IBOutlet weak var webview: WKWebView!
+    
+    
+    
+    override func loadView() {
+        let webConfiguration = WKWebViewConfiguration()
+        webview = WKWebView(frame: .zero, configuration: webConfiguration)
+        webview.uiDelegate = self
+        view = webview
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

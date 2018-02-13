@@ -2,7 +2,7 @@
 //  SampleXCUITests.swift
 //  SampleXCUITests
 //
-//  Created by Kalam Shah on 29/01/18.
+//  Created by Kalam Shah on 13/02/18.
 //  Copyright © 2018 BrowserStack. All rights reserved.
 //
 
@@ -63,5 +63,4 @@ class SampleXCUITests: XCTestCase {
         //verify that the text entered matches the text view
         XCTAssertEqual(app.staticTexts.element.label, enterText)
     }
-    
 }

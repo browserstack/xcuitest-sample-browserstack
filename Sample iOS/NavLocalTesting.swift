@@ -9,13 +9,20 @@
 import UIKit
 import WebKit
 
-class NavLocalTesting: UIViewController {
+class NavLocalTesting: UIViewController, WKUIDelegate {
     
     @IBOutlet weak var localtestingwebview: WKWebView!
     
+    
+    override func loadView() {
+        let webConfiguration = WKWebViewConfiguration()
+        localtestingwebview = WKWebView(frame: .zero, configuration: webConfiguration)
+        localtestingwebview.uiDelegate = self
+        view = localtestingwebview
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let url = URL(string:"https://local.bsstag.com:45692")
         let request = URLRequest(url: url!)
         
