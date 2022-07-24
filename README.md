@@ -10,7 +10,7 @@ A sample iOS app supporting [XCUI Tests](https://developer.apple.com/library/con
 2. Product -> Clean
 3. Build the ipa
 	1. Product -> Archive
-	2. Window -> Organizer -> Select the most recently created archive -> Export
+	2. Window -> Organizer -> Select the most recently created archive -> Distribute App
 	3. Export for "Development"
 	4. Select the location where you want the ipa to be saved
 4. Build the XC UI Tests zip
